@@ -1,4 +1,6 @@
 ---
+import Footer from "@/components/Footer.astro";
+
 interface Props {
   title: string;
   description?: string;
@@ -30,6 +32,7 @@ const {title} = Astro.props;
   </head>
   <body class="max-h-screen max-w-[90rem] antialiased">
     <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>
